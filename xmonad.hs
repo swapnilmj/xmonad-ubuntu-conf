@@ -41,7 +41,8 @@ import Data.Ratio ((%))
 -}
 
 myModMask            = mod1Mask       -- changes the mod key to "super"
-myFocusedBorderColor = "#ff0000"      -- color of focused border
+{-myFocusedBorderColor = "#ff0000"      -- color of focused border-}
+myFocusedBorderColor = "#ff810c"      -- color of focused border
 myNormalBorderColor  = "#cccccc"      -- color of inactive border
 myBorderWidth        = 1              -- width of border around windows
 myTerminal           = "terminator"   -- which terminal software to use
@@ -126,7 +127,7 @@ defaultLayouts = smartBorders(avoidStruts(
   -- Mirrored variation of ResizableTall. In this layout, the large
   -- master window is at the top, and remaining windows tile at the
   -- bottom of the screen. Can be resized as described above.
-  ||| Mirror (ResizableTall 1 (3/100) (1/2) [])
+  -- ||| Mirror (ResizableTall 1 (3/100) (1/2) [])
 
   -- Full layout makes every window full screen. When you toggle the
   -- active window, it will bring the active window to the front.
@@ -146,7 +147,8 @@ defaultLayouts = smartBorders(avoidStruts(
   -- Grid layout tries to equally distribute windows in the available
   -- space, increasing the number of columns and rows as necessary.
   -- Master window is at top left.
-  ||| Grid))
+  -- ||| Grid
+  ))
 
 
 -- Here we define some layouts which will be assigned to specific
