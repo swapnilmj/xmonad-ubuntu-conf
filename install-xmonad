@@ -31,3 +31,11 @@ echo "Linking to customized gnome 2 configuration..."
 mv ~/.gtkrc-2.0 ~/gtkrc-2.0.original
 ln -s .xmonad/.gtkrc-2.0 ~/.gtkrc-2.0
 
+
+################
+# Customisations
+################
+
+# so that password is not asked everytime.
+echo "eval `ssh-agent`
+ssh-add" >> ~/.profile
