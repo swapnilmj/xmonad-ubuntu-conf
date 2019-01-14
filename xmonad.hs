@@ -45,7 +45,8 @@ myModMask            = mod1Mask       -- changes the mod key to "super"
 myFocusedBorderColor = "#ff810c"      -- color of focused border
 myNormalBorderColor  = "#cccccc"      -- color of inactive border
 myBorderWidth        = 1              -- width of border around windows
-myTerminal           = "terminator"   -- which terminal software to use
+--myTerminal           = "terminator"   -- which terminal software to use
+myTerminal           = "termite"   -- which terminal software to use
 myIMRosterTitle      = "Buddy List"   -- title of roster on IM workspace
                                       -- use "Buddy List" for Pidgin, but
                                       -- "Contact List" for Empathy
