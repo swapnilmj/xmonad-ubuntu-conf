@@ -121,12 +121,13 @@ defaultLayouts = smartBorders(avoidStruts(
   -- Mirrored variation of ResizableTall. In this layout, the large
   -- master window is at the top, and remaining windows tile at the
   -- bottom of the screen. Can be resized as described above.
-  ||| Mirror (ResizableTall 1 (3/100) (1/2) [])
+  -- ||| Mirror (ResizableTall 1 (3/100) (1/2) [])
 
   -- Full layout makes every window full screen. When you toggle the
   -- active window, it will bring the active window to the front.
   ||| noBorders Full
 
+  {-
   -- ThreeColMid layout puts the large master window in the center
   -- of the screen. As configured below, by default it takes of 3/4 of
   -- the available space. Remaining windows tile to both the left and
@@ -141,7 +142,8 @@ defaultLayouts = smartBorders(avoidStruts(
   -- Grid layout tries to equally distribute windows in the available
   -- space, increasing the number of columns and rows as necessary.
   -- Master window is at top left.
-  ||| Grid))
+  ||| Grid -}
+  ))
 
 
 -- Here we define some layouts which will be assigned to specific
@@ -160,10 +162,14 @@ gimpLayout = smartBorders(avoidStruts(ThreeColMid 1 (3/100) (3/4)))
 
 -- Here we combine our default layouts with our specific, workspace-locked
 -- layouts.
+{-
 myLayouts =
   onWorkspace "7:Chat" chatLayout
   $ onWorkspace "9:Pix" gimpLayout
   $ defaultLayouts
+-}
+
+myLayouts = defaultLayouts
 
 
 {-
