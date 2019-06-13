@@ -13,8 +13,11 @@
 Config { 
   -- Set font and default foreground/background colors. Note that
   -- the height of xmobar is controlled by the font you use.
-  font = "xft:Ubuntu Mono-14",
-  bgColor = "black",
+  -- font = "xft:Ubuntu Mono-14",
+  font = "xft:Inconsolata-12",
+
+  bgColor = "#002b36",
+  -- fgColor = "#657b83",
   fgColor = "grey",
 
   -- Position is top left, taking up 94% of screen.
@@ -31,7 +34,7 @@ Config {
     -- If it's above 50%, we consider it high usage and make it red.  
     Run Cpu [
       "-H","50",
-      "--high","red"
+      "--high","#657b83"
     ] 10,
 
     -- Gather and format memory usage information
