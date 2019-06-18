@@ -23,6 +23,7 @@ import XMonad.Layout.NoBorders
 import XMonad.Layout.Circle
 import XMonad.Layout.PerWorkspace (onWorkspace)
 import XMonad.Layout.Fullscreen
+import XMonad.Layout.Spacing
 import XMonad.Util.EZConfig
 import XMonad.Util.Run
 import XMonad.Hooks.DynamicLog
@@ -169,7 +170,7 @@ myLayouts =
   $ defaultLayouts
 -}
 
-myLayouts = defaultLayouts
+myLayouts = spacing 5 $ defaultLayouts
 
 
 {-
