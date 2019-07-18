@@ -14,7 +14,7 @@ Config {
   -- Set font and default foreground/background colors. Note that
   -- the height of xmobar is controlled by the font you use.
   -- font = "xft:Ubuntu Mono-14",
-  font = "xft:Inconsolata-12",
+  font = "xft:DejaVu Sans Mono-10",
 
   bgColor = "#002b36",
   -- fgColor = "#657b83",
