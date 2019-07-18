@@ -16,9 +16,13 @@ Config {
   -- font = "xft:Ubuntu Mono-14",
   font = "xft:DejaVu Sans Mono-10",
 
-  bgColor = "#002b36",
-  -- fgColor = "#657b83",
-  fgColor = "grey",
+  -- bgColor = "#002b36",
+  -- -- fgColor = "#657b83",
+  -- fgColor = "grey",
+
+   bgColor = "#48372F",
+   fgColor = "#f0d7c2",
+
 
   -- Position is top left, taking up 94% of screen.
   -- You are likely to have to tweak the width here based on the width

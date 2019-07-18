@@ -171,7 +171,8 @@ myLayouts =
   $ defaultLayouts
 -}
 
-myLayouts = spacing 5 $ defaultLayouts
+--myLayouts = spacing 5 $ defaultLayouts
+myLayouts = smartSpacing 5 $ defaultLayouts
 
 
 {-
