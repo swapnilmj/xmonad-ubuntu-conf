@@ -23,6 +23,7 @@ import XMonad.Layout.NoBorders
 import XMonad.Layout.Circle
 import XMonad.Layout.PerWorkspace (onWorkspace)
 import XMonad.Layout.Fullscreen
+import XMonad.Layout.Spacing
 import XMonad.Util.EZConfig
 import XMonad.Util.Run
 import XMonad.Hooks.DynamicLog
@@ -41,8 +42,9 @@ import Data.Ratio ((%))
 myModMask            = mod1Mask       -- changes the mod key to "super"
 {-myFocusedBorderColor = "#ff0000"      -- color of focused border-}
 myFocusedBorderColor = "#ff810c"      -- color of focused border
-myNormalBorderColor  = "#cccccc"      -- color of inactive border
-myBorderWidth        = 1              -- width of border around windows
+--myNormalBorderColor  = "#cccccc"      -- color of inactive border
+myNormalBorderColor  = "#48372F"      -- color of inactive border
+myBorderWidth        = 2              -- width of border around windows
 myTerminal           = "termite"   -- which terminal software to use
 
 {-
@@ -169,7 +171,7 @@ myLayouts =
   $ defaultLayouts
 -}
 
-myLayouts = defaultLayouts
+myLayouts = spacing 5 $ defaultLayouts
 
 
 {-
